@@ -16,7 +16,6 @@ body{
     padding: 10px;
     width: 150px;
     height: 1000px;
-   
     color: #fff;
     text-align: center;
     float: left;
@@ -27,9 +26,8 @@ body{
     margin-left: 180px; 
 }
 h1,h2{
-    margin: 15px 0 15px 0;
+    margin: 0 0 15px 0;
 }
-
 
 .info h4{
     display: inline-block;
@@ -47,11 +45,4 @@ h1,h2{
 .cont p{
     margin-right: 30px;
     display: inline-block;
-}
-
-.skill p:nth-child(2){
-    margin-bottom: 15px;
-}
-.exp p:nth-child(2){
-    margin-bottom: 15px;
 }

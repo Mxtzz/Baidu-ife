@@ -1,0 +1,42 @@
+h1,h2,h4,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 60%;
+    margin: 15px auto;
+    background: #eee;
+}
+.main{
+    background: #fff;
+    padding: 30px 50px;
+}
+h1,h2{
+    margin: 15px 0 15px 0;
+}
+
+
+.info h4{
+    display: inline-block;
+    margin-right: 10px;
+}
+.info p{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.cont h4{
+    margin-right: 10px;
+    display: inline-block;
+}
+.cont p{
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.skill p:nth-child(2){
+    margin-bottom: 15px;
+}
+.exp p:nth-child(2){
+    margin-bottom: 15px;
+}

@@ -41,7 +41,7 @@ body{
 
 /* banner */
 .banner_bg{
-    background: green; 
+    background: rgb(102,187,51); 
     position: relative;
 }
 .banner{

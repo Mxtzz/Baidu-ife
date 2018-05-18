@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 30px;
+    background: #eee;
+    width: 90%;
+}
+div{
+    box-sizing: border-box;
+}
+.box-1,.box-2,.box-3{
+    border: 1px solid #333;
+    height: 30px;
+}
+/* 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 */
+.demo1 {
+    margin: 0 0 10px 0;
+    background: #fff;
+    position: relative;
+    height: 150px;
+}
+.demo1 .demo1-float{
+    height: 50px;
+}
+.demo1 .demo1-float .box-1{
+    width: 30%;
+    float: left;
+}
+.demo1 .demo1-float .box-2{
+    width: 70%;
+    float: right;
+}
+.demo1 .demo1-position{
+    height: 50px;
+}
+.demo1 .demo1-position .box-1{
+    width: 30%;
+    position: absolute;
+}
+.demo1 .demo1-position .box-2{
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+.demo1 .demo1-flexbox{
+    display: flex;
+}
+.demo1 .demo1-flexbox .box-1{
+    width: 30%;
+}
+.demo1 .demo1-flexbox .box-2{
+    width: 70%;
+}
+
+/* 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 */
+.demo2 {
+    margin: 0 0 10px 0;
+    background: #fff;
+    position: relative;
+    height: 150px;
+}
+
+.demo2 .demo2-float .box-1{
+    width: 200px;
+    float: left;
+}
+
+.demo2 .demo2-position{
+    margin-top: 20px;
+}
+.demo2 .demo2-position .box-1{
+    width: 200px;
+    display: inline-block;
+}
+.demo2 .demo2-position .box-2{
+    position: absolute;
+    display: inline-block;
+    left: 200px;
+    right: 0;
+}
+
+.demo2 .demo2-flexbox{
+    display: flex;
+    margin-top: 20px;
+}
+.demo2 .demo2-flexbox .box-1{
+    width: 200px;
+}
+.demo2 .demo2-flexbox .box-2{
+    flex: 1;
+}
+
+/* 实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化 */
+.demo3 {
+    margin: 0 0 10px 0;
+    background: #fff;
+    position: relative;
+    height: 150px;
+}
+.demo3 .demo3-float{
+
+}
+.demo3 .demo3-float .box-1{
+    width: 200px;
+    float: right;
+}
+
+.demo3 .demo3-position{
+    margin-top: 20px;
+    height: 30px;
+}
+.demo3 .demo3-position .box-1{
+    display: inline-block;
+    position: absolute;
+    right: 200px;
+    left: 0;
+}
+.demo3 .demo3-position .box-2{
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    right: 0;
+}
+
+.demo3 .demo3-flexbox{
+    margin-top: 20px;
+    display: flex;
+}
+.demo3 .demo3-flexbox .box-1{
+    flex: 1;
+}
+.demo3 .demo3-flexbox .box-2{
+    width: 200px;
+}
+
+/* 实现一个三栏布局，左侧固定宽度，右侧固定宽度，
+中间部分宽度随浏览器宽度变化而自适应变化 */
+.demo4 {
+    margin: 0 0 10px 0;
+    background: #fff;
+    position: relative;
+    height: 150px;
+}
+
+.demo4 .demo4-float{
+    height: 30px;
+}
+.demo4 .demo4-float .box-1{
+    width: 200px;
+    float: left;
+}
+.demo4 .demo4-float .box-2{
+    float: left;
+    width: calc(100% - 400px);
+}
+.demo4 .demo4-float .box-3{
+    width: 200px;
+    float: right;
+}
+
+.demo4 .demo4-position{
+    margin-top: 20px;
+    height: 30px;
+}
+.demo4 .demo4-position .box-1{
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+.demo4 .demo4-position .box-2{
+    position: absolute;
+    left: 200px;
+    right: 200px;
+}
+.demo4 .demo4-position .box-3{
+    width: 200px;
+    position: absolute;
+    right: 0;
+}
+
+.demo4 .demo4-flexbox{
+    margin-top: 20px;
+    display: flex;
+}
+.demo4 .demo4-flexbox .box-1{
+    width: 200px;
+}
+.demo4 .demo4-flexbox .box-2{
+    flex: 1;
+}
+.demo4 .demo4-flexbox .box-3{
+    width: 200px;
+}
+
+/* 实现一个三栏布局，左侧固定宽度，中间固定宽度，
+右侧根据浏览器宽度变化而自适应变化 */
+.demo5 {
+    margin: 0 0 10px 0;
+    background: #fff;
+    position: relative;
+    height: 150px;
+}
+
+.demo5 .demo5-float{
+    
+}
+.demo5 .demo5-float .box-1{
+    width: 200px;
+    float: left;
+}
+.demo5 .demo5-float .box-2{
+    width: 200px;
+    float: left;
+}
+.demo5 .demo5-float .box-3{
+    
+}
+
+.demo5 .demo5-position{
+    height: 30px;
+    margin-top: 20px;
+}
+.demo5 .demo5-position .box-1{
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+.demo5 .demo5-position .box-2{
+    width: 200px;
+    position: absolute;
+    left: 200px;
+}
+.demo5 .demo5-position .box-3{
+    position: absolute;
+    left: 400px;
+    right: 0;
+}
+
+.demo5 .demo5-flexbox{
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+.demo5 .demo5-flexbox .box-1{
+    width: 200px;
+}
+.demo5 .demo5-flexbox .box-2{
+    width: 200px;
+}
+.demo5 .demo5-flexbox .box-3{
+    flex: 1;
+}

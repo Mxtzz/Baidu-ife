@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url('../images/header-bg2.png'),url('../images/header-bg1.png') no-repeat;
+}
+.header_main{
+    width: 970px;
+    height: 990px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1{
+    font-size: 48px;
+    padding-top: 200px;
+}
+.header p{
+    font-size: 22px;
+    width: 760px;
+    color: #aaa;
+    margin: 42px auto;
+}
+.header .create{
+    overflow: hidden;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    padding: 60px 100px 50px 100px;
+}
+.header .create h2{
+    font-size: 14px;
+}
+.header .create p{
+    font-size: 10px;
+    margin-top: 20px;
+    color: #aaa;
+}
+.header .create_inp{
+    margin-top: 46px;
+}
+.header .create_inp input[type="email"],input[type="password"]{
+    outline: none;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+    padding: 18px;
+    color: #fff;
+    width: 290px;
+    height: 50px;
+    margin-right: 30px;
+    float: left;
+}
+.header .create_inp input[type="submit"]{
+    outline: none;
+    width: 126px;
+    height: 50px;
+    padding: 18px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.banner{
+    height: 710px;
+    background: #fff;
+}
+.banner_main{
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 88px; 
+}
+.banner h1{
+    font-size: 12px;
+    text-align: center;
+}
+.banner h2{
+    font-size: 40px;
+    text-align: center;
+    width: 660px;
+    margin: 36px auto;
+    font-weight: normal;
+}
+.banner .items{
+    display: flex;
+    flex-flow:row wrap;
+    
+}
+.banner .items .item1,.item2,.item3,.item4{
+    flex: 1 400px;
+    height: 86px;
+    /* border: 1px solid #333; */
+    padding: 40px 0;
+    position: relative;
+}
+.banner img{
+    display: inline-block;
+    margin-right: 30px;
+}
+.banner .item-right{
+    position: absolute;
+    width: 356px;
+    display: inline-block;
+    left: 80px;
+}
+.banner .item-right h3{
+    font-size: 16px;
+}
+.banner .item-right p{
+    color: #999;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.navbar{
+    background: url('../images/navbar-bg2.png'),url('../images/navbar-bg1.png') no-repeat;
+    height: 800px;
+}

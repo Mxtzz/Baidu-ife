@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Montserrat ExtraLight'; 
+    src: url('../font/Montserrat-ExtraLight.otf');  
+}
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat ExtraLight';
 }
 
 body{
@@ -94,7 +99,10 @@ body{
     flex-flow:row wrap;
     
 }
-.banner .items .item1,.item2,.item3,.item4{
+.banner .items .item1,
+.banner .items .item2,
+.banner .items .item3,
+.banner .items .item4{
     flex: 1 400px;
     height: 86px;
     /* border: 1px solid #333; */
@@ -123,4 +131,266 @@ body{
 .navbar{
     background: url('../images/navbar-bg2.png'),url('../images/navbar-bg1.png') no-repeat;
     height: 800px;
+    overflow: hidden;
+}
+.navbar_main{
+    width: 970px;
+    margin: 0 auto;
+    padding: 100px 0;
+    position: relative;
+}
+.navbar_main .nav_left{
+    float: left;
+}
+.navbar_main h1{
+    color: #fff;
+    font-weight: normal;
+    font-size: 38px;
+    width: 368px;
+    margin-top: 88px;
+}
+.navbar_main p{
+    color: #ccc;
+    font-size: 18px;
+    width: 368px;
+    margin: 46px 0 60px 0;
+}
+.navbar_main input{
+    outline: none;
+    border: 1px solid #aaa;
+    height: 60px;
+    width: 240px;
+    font-size: 12px;
+}
+.navbar_main input:nth-of-type(1){
+    background: #fff;
+    margin-right: 32px;
+}
+.navbar_main input:nth-of-type(2){
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.navbar_main .nav_right{
+    float: right;
+}
+.navbar_main .nav_right img{
+    position: absolute;
+    right: -520px;
+}
+
+.container{
+    background: #fff;
+}
+
+.container .top{
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    height: 580px;
+}
+.container .top_main{
+    width: 970px;
+    margin: 0 auto;
+}
+.container .top_main h1{
+    padding: 100px 0 90px 0;
+    font-size: 40px;
+}
+.container .top_main p{
+    font-size: 16px;
+}
+.container .top_main .main{
+    display: flex;
+}
+.container .top_main div{
+    flex: 1;
+}
+.container .top_main img{
+    margin-bottom: 36px;
+}
+.container .top_main .main1,.main2{
+    padding: 0 80px 0 0;
+}
+
+.container .top_mid{
+    border-bottom: 1px solid #ccc;
+    height: 1000px;
+    box-sizing: border-box;
+}
+.container .top_mid_main{
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 115px; 
+}
+.container .top_mid h1{
+    margin-top: 75px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.container .top_mid p{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.container .top_mid_1{
+    height: 430px;
+}
+.container .top_mid_1 .left{
+    width: 570px;
+    height: 350px;
+    background: url('../images/top-mid-1.png') no-repeat 25% 58%;
+    float: left;
+}
+.container .top_mid_1 .right{
+    float: right;
+    width: 313px;
+}
+
+.container .top_mid_2{
+    clear: both;
+    height: 430px;
+}
+.container .top_mid_2 .left{
+    float: left;
+    width: 300px;
+}
+.container .top_mid_2 .right{
+    box-sizing: border-box;
+    width: 570px;
+    height: 350px;
+    background: url('../images/top-mid-2.png') no-repeat 25% 46%;
+    float: right;
+}
+.container .bottom_mid{
+    border-bottom: 1px solid #ccc;
+    height: 1080px;
+    box-sizing: border-box;
+}
+.container .bottom_mid_main{
+    width: 970px;
+    margin: 0 auto;
+}
+.container .bottom_mid h1{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 42px;
+}
+.container .bottom_mid p{
+    text-align: center;
+    font-size: 16px;
+    width: 670px;
+    margin: 0 auto;
+    padding-top: 30px; 
+}
+.container .bottom_mid .items{
+    display: flex;
+    flex-flow:row wrap;
+    padding-top: 60px;
+}
+.container .bottom_mid .items a{
+    display: block;
+    height: 340px;
+    flex: 1 470px;
+    box-sizing: border-box;
+}
+.container .bottom_mid .item1{
+    background: url('../images/container-bottom-1.png') no-repeat 100% 30%;
+    margin: 0 30px 30px 0;
+}
+.container .bottom_mid .item1:hover{
+    background: url('../images/Text.png'),url('../images/container-bottom-1.png') no-repeat 100% 30%;
+}
+
+.container .bottom_mid .item2{
+    background: url('../images/container-bottom-2.png') no-repeat;
+    background-size: 100%;
+}
+.container .bottom_mid .item2:hover{
+    background: url('../images/Text.png'),url('../images/container-bottom-2.png') no-repeat;
+    background-size: 100%;
+}
+.container .bottom_mid .item3{
+    background: url('../images/container-bottom-3.png') no-repeat;
+    background-size: 100%;
+    margin: 0 30px 0 0;
+}
+.container .bottom_mid .item3:hover{
+    background: url('../images/Text.png'),url('../images/container-bottom-3.png') no-repeat;
+    background-size: 100%;
+    margin: 0 30px 0 0;
+}
+.container .bottom_mid .item4{
+    background: url('../images/container-bottom-4.png') no-repeat;
+    background-size: 100%;
+}
+.container .bottom_mid .item4:hover{
+    background: url('../images/Text.png'),url('../images/container-bottom-4.png') no-repeat;
+    background-size: 100%;
+}
+
+.container .bottom{
+    border-bottom: 1px solid #ccc;
+    height: 700px;
+}
+.container .bottom_main{
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 70px; 
+}
+.container .bottom .left{
+    float: left;
+}
+.container .bottom .left form{
+    box-sizing: border-box;
+    width: 470px;
+    height: 560px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 12px;
+}
+.container .bottom .left h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container .bottom .left input,
+.container .bottom .left textarea
+{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-top: 30px;
+    width: 100%;
+}
+.container .bottom .left input[type=submit]{
+    background: #333;
+    color: #fff;
+}
+.container .bottom .right{
+    width: 355px;
+    float: right;
+}
+.container .bottom .right h1{
+    padding-top: 86px;
+    font-size: 40px;
+}
+.container .bottom .right p{
+    padding-top: 38px;
+    padding-bottom: 70px;
+    font-size: 16px;
+}
+.container .bottom .right div{
+    clear: both;
+    position: relative;
+    height: 70px;
+}
+.container .bottom .right img{
+    position: absolute;
+    top: 5px;
+}
+.container .bottom .right h3{
+    position: absolute;
+    left: 38px;
+    font-size: 16px;
 }

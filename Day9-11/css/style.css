@@ -105,12 +105,16 @@ body{
     
 }
 .banner .items .item1,
+.banner .items .item3{
+    flex: 4 400px;
+    height: 86px;
+    padding: 40px 0;
+    position: relative;
+}
 .banner .items .item2,
-.banner .items .item3,
 .banner .items .item4{
     flex: 1 400px;
     height: 86px;
-    /* border: 1px solid #333; */
     padding: 40px 0;
     position: relative;
 }

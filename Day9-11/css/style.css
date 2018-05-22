@@ -7,7 +7,12 @@
     margin: 0;
     font-family: 'Montserrat ExtraLight';
 }
-
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 body{
     background: #eee;
     width: 1600px;
@@ -393,4 +398,33 @@ body{
     position: absolute;
     left: 38px;
     font-size: 16px;
+}
+
+.footer{
+    height: 410px;
+    background: #222;
+    display: flex;
+    padding: 80px;
+    box-sizing: border-box;
+}
+.footer .item1,
+.footer .item2,
+.footer .item3,
+.footer .item4{
+    flex: 1;
+    padding: 0 80px;
+}
+.footer h1{
+    color: #fff;
+    font-size: 16px;
+}
+.footer a{
+    color: #aaa;
+    font-size: 16px;
+}
+.footer li{
+    padding: 14px;
+}
+.footer img{
+    padding: 10px 10px 10px 0;
 }

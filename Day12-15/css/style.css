@@ -229,6 +229,64 @@ ul li{
 }
 .right .r_right .header{
     box-sizing: border-box;
-    border-bottom: 1px solid rgb(230, 233, 236);;
+    border-bottom: 1px solid rgb(230, 233, 236);
     height: 70px; 
+}
+.right .r_right .header h3{
+    font-size: 16px;
+    color: rgb(88, 93, 104);
+    margin: 25px 10px 25px 25px;
+    float: left;
+}
+.right .r_right .header .dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: rgb(42, 158, 245);
+    display: inline;
+    float: left;
+    margin-top: 32px;
+}
+
+.right .r_right .item1{
+    padding: 26px 56px 0px 30px;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+.right .r_right .item1 div:first-child{
+    float: left;
+}
+.right .r_right .item1 div:last-child{
+    margin-left: 68px;
+}
+.right .r_right .item1 h4{
+    font-size: 16px;
+    line-height: 28px;
+}
+.right .r_right .item1 span{
+    color: #ccc;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.right .r_right .item1 p{
+    font-size: 14px;
+    color: rgb(144, 158, 176);
+}
+.right .r_right .content .line{
+    height: 1px;
+    width: 100%;
+    background: rgb(230, 233, 236);
+    color: rgb(230, 233, 236);
+    position: relative;
+    margin: 20px 0 0 0;
+    clear: both;
+    text-align: center;
+}
+.right .r_right .content .line span{
+    background: #fff;
+    padding: 0 18px;
+    position: absolute;
+    top: -10px;
+    font-size: 14px;
 }

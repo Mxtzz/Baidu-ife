@@ -274,19 +274,18 @@ ul li{
     color: rgb(144, 158, 176);
 }
 .right .r_right .content .line{
-    height: 1px;
-    width: 100%;
-    background: rgb(230, 233, 236);
-    color: rgb(230, 233, 236);
     position: relative;
-    margin: 20px 0 0 0;
-    clear: both;
     text-align: center;
+    clear: both;
+    border-top: 1px solid rgb(230, 233, 236);;
+    margin-top: 20px; 
 }
-.right .r_right .content .line span{
-    background: #fff;
-    padding: 0 18px;
+.right .r_right .content .line p{
+    display: inline-block;
     position: absolute;
     top: -10px;
+    background: #fff;
     font-size: 14px;
+    padding: 0 18px;
+    color: rgb(230, 233, 236);
 }

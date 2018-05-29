@@ -25,7 +25,7 @@ ul li{
 .left .left_angle{
     position: absolute;
     border-top: 5px solid transparent;
-    border-left: 5px solid rgb(42, 158, 245);
+    border-left: 5px solid #2399f1;
     border-bottom: 5px solid transparent;
     top:44px;
 }
@@ -64,12 +64,39 @@ ul li{
     float: right;
 }
 .mid li{
-    height: 36px;
+    margin: 5px 0;
+    height: 26px;
+    line-height: 26px;
+}
+.mid .mid_top li:nth-child(3) span{
+    color: #fff;
+    font-size: 14px;
+    background: #2399f1;
+    padding: 0 10px;
+    border-radius: 15px;
 }
 .mid .mid_mid,
 .mid .mid_bottom{
     border-top: 1px solid rgb(42,53,71);
     padding-top: 16px;
+}
+
+.mid .mid_bottom li:nth-child(2) span{
+    color: #fff;
+    font-size: 14px;
+    background: #2399f1;
+    padding: 0 10px;
+
+    border-radius: 15px;
+}
+.mid .mid_bottom li:nth-child(4) span{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: rgb(232, 70, 43);
+    padding: 0 6px;
+    width: 15px;
+    border-radius: 15px;
 }
 .mid .monthly{
     position: absolute;
@@ -135,12 +162,23 @@ ul li{
     top: 14px;
     display: flex;
 }
-.right .r_header img{
+.right .r_header .user div{
     flex: 1;
+    position: relative;
+}
+.right .r_header .user div:nth-child(1){
+    right: 30px;
+}
+.right .r_header .user div:nth-child(2){
+    right: 15px;
+    padding-top: 6px; 
+}
+.right .r_header .user div:nth-child(3){
+    padding-top: 15px; 
 }
 .right .r_header .user h2{
     font-size: 16px;
-    color: rgb(45, 161, 248);
+    color: #2399f1;
 }
 .right .r_header .user p{
     font-size: 14px;
@@ -154,6 +192,7 @@ ul li{
     border-right: 1px solid rgb(230, 233, 236);
     top: 80px;
     bottom: 0;
+    overflow-y: scroll;
 }
 .right .r_left .header{
     box-sizing: border-box;
@@ -179,19 +218,19 @@ ul li{
 }
 
 .right .r_left .container{
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
 }
+::-webkit-scrollbar{width:0px}
+
 .right .r_left .container .item{
     height: 130px;
     border-bottom: 1px solid rgb(230, 233, 236);
     box-sizing: border-box;
     width: 100%;
-    flex: 1;
     padding: 20px;
 }
-.right .r_left .container .item:nth-child(1){
-    border-left: 2px solid rgb(45, 161, 248);
+.right .r_left .container li:nth-child(1){
+    border-left: 3px solid #2399f1;
 }
 .right .r_left .container .item img{
     float: left;
@@ -202,7 +241,19 @@ ul li{
 }
 .right .r_left .container .item h3{
     font-size: 16px;
-    color: rgb(45, 161, 248);
+    color: rgb(88, 93, 104);
+}
+.right .r_left .container li:nth-child(1) h3{
+    font-size: 16px;
+    color: #2399f1;
+}
+.right .r_left .container li:nth-child(1) span{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: #2399f1;
+    float: left;
+    margin: 8px 6px 0 0;
 }
 .right .r_left .container .item h4{
     font-size: 14px;
@@ -217,6 +268,12 @@ ul li{
     font-size: 14px;
     color: rgb(144, 158, 176);
     padding-top: 10px;
+
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*用...代替超出部分*/
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
 }
 
 .right .r_right{
@@ -226,11 +283,13 @@ ul li{
     top: 80px;
     right: 0;
     bottom: 0;
+    overflow-y: auto;
 }
 .right .r_right .header{
     box-sizing: border-box;
     border-bottom: 1px solid rgb(230, 233, 236);
     height: 70px; 
+    overflow: hidden;
 }
 .right .r_right .header h3{
     font-size: 16px;
@@ -238,14 +297,58 @@ ul li{
     margin: 25px 10px 25px 25px;
     float: left;
 }
-.right .r_right .header .dot{
+.right .r_right .dot{
     width: 8px;
     height: 8px;
     border-radius: 4px;
-    background: rgb(42, 158, 245);
+    background: #1bb934;
     display: inline;
     float: left;
     margin-top: 32px;
+}
+.right .r_right .del{
+    float: right;
+    margin: 18px 20px;
+    font-size: 0;
+}
+.right .r_right .del .tools{
+}
+.right .r_right .del .tools button{
+    width: 36px;
+    height: 32px;
+    border: 1px solid #ccc;
+}
+.right .r_right .del .tools button:nth-child(1){
+    background: url('../img/User-icon.png') no-repeat 50% 50%,linear-gradient(to bottom, #fff 0%,#eee 100%);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+.right .r_right .del .tools button:nth-child(2){
+    background: url('../img/Upload-icon.png') no-repeat 50% 50%,linear-gradient(to bottom, #fff 0%,#eee 100%);
+    border-right: none;
+}
+.right .r_right .del .tools button:nth-child(3){
+    background: url('../img/Trash-icon.png') no-repeat 50% 50%,linear-gradient(to bottom, #fff 0%,#eee 100%);
+    border-radius: 0 4px 4px 0;
+}
+.right .r_right .del .tools h4{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 22px;
+    position: relative;
+    top: -10px;
+    padding: 0 22px;
+    border-left: 1px solid #eee;
+}
+.right .r_right .del .tools button:nth-child(5){
+    border-right: none;
+    background: url('../img/Arrow-left.png') no-repeat 50% 50%,linear-gradient(to bottom, #fff 0%,#eee 100%);
+    border-radius: 4px 0 0 4px;
+}
+.right .r_right .del .tools button:nth-child(6){
+    background: url('../img/Arrow-right.png') no-repeat 50% 50%,linear-gradient(to bottom, #fff 0%,#eee 100%);
+    border-radius: 0 4px 4px 0;
 }
 
 .right .r_right .item1{
@@ -274,7 +377,6 @@ ul li{
     color: rgb(144, 158, 176);
 }
 .right .r_right .content .line{
-    position: relative;
     text-align: center;
     clear: both;
     border-top: 1px solid rgb(230, 233, 236);;
@@ -282,8 +384,8 @@ ul li{
 }
 .right .r_right .content .line p{
     display: inline-block;
-    position: absolute;
-    top: -10px;
+    position: relative;
+    top: -12px;
     background: #fff;
     font-size: 14px;
     padding: 0 18px;

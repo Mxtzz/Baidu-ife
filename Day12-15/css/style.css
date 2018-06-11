@@ -192,6 +192,7 @@ ul li{
     border-right: 1px solid rgb(230, 233, 236);
     top: 80px;
     bottom: 0;
+    /* overflow: hidden; */
     overflow-y: scroll;
 }
 .right .r_left .header{
@@ -333,8 +334,10 @@ ul li{
 }
 .right .r_right .del .tools h4{
     display: inline-block;
+    height: 30px;
+    line-height: 30px;
     font-size: 14px;
-    font-weight: bold;
+    color: rgb(88, 93, 104);
     margin-left: 22px;
     position: relative;
     top: -10px;
@@ -389,5 +392,26 @@ ul li{
     background: #fff;
     font-size: 14px;
     padding: 0 18px;
-    color: rgb(230, 233, 236);
+    color: #ccc;
+}
+
+.right .comment{
+    font-size: 0;
+    margin: 22px;
+    position: relative;
+}
+.right .comment input:first-child{
+    width: 54px;
+    height: 54px;
+    font-size: 36px;
+    color: #aaa;
+}
+.right .comment input:last-child{
+
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #aaa;
+    /* position: absolute; */
+    width: 100%;
 }
